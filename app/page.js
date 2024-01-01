@@ -27,7 +27,7 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {data.map((post) => {
         return (
-          <div key={post._id} className="border border-white m-4">
+          <div key={post._id} className="border border-white m-6">
             <h1 className="text-2xl font-bold">{post.title}</h1>
             <PortableText value={post.content} />
           </div>
